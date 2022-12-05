@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nav_menu_bar_DZ-7" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Dolgiy S. FE127" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav menu bar</title>
+    <link id="stylesheet" rel="stylesheet"  type="text/css" href="css/nav-theme-1.css"/> 
+    <link id="stylesheet" rel="stylesheet1" type="text/css" href="css/nav-theme-2.css"/>
+    <link id="stylesheet" rel="stylesheet2" type="text/css" href="css/nav-theme-3.css"/>
+    <link id="stylesheet" rel="stylesheet3" type="text/css" href="css/nav-theme-4.css"/>
+    <link id="stylesheet" rel="stylesheet4" type="text/css" href="css/nav-theme-5.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"> <!-- блиотека внутри которой есть подходящая иконка "лупа"-->
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <div class="nav_logo">
+            <span class="nav_logo_span"><a href="#">&#9776;</a></span>
+         </div>
+        <div class="nav_menu">
+        <ul>
+            <li><a href="#" class="item1">HOME</a></li>
+            <li><a href="#" class="item2">ABOUT</a>
+                <ul>
+                    <li><a href="#">ABOUT 1</a>
+                        <ul>
+                            <li><a href="#">ABOUT 1.1</a></li>
+                        </ul></li>
+                    <li><a href="#">ABOUT 2</a>
+                        <ul>
+                            <li><a href="#">ABOUT 2.1</a></li>
+                            <li><a href="#">ABOUT 2.2</a></li>
+                        </ul></li>
+                    <li><a href="#">ABOUT 3</a>
+                        <ul>
+                            <li><a href="#">ABOUT 3.1</a></li>
+                            <li><a href="#">ABOUT 3.2</a></li>
+                            <li><a href="#">ABOUT 3.3</a>
+                                <ul>
+                                    <li><a href="#">ABOUT 3.3.4</a></li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                </ul>
+            </li>
+            <li><a href="#" class="item3">SERVICE</a>
+                <ul>
+                    <li><a href="#">SERVICE 1</a>
+                    </li>
+                    <li><a href="#">SERVICE 2</a></li>
+                    <li><a href="#">SERVICE 3</a>
+                        <ul>
+                            <li><a href="#">ABOUT 1.1</a></li>
+                            <li><a href="#">ABOUT 1.2</a></li>
+                            <li><a href="#">ABOUT 1.3</a></li>
+                        </ul></li>
+                </ul></li>
+            <li><a href="#" class="item4">CONTACT</a></li>
+        </div>
+        <div class="search">
+            <input class="input" type="search" maxlength="15"><i class="fas fa-search"><a href=""></a></i></input>
+        </div>
+  </ul>
+    </nav>
+
+    <div class="button_style">  <!-- при нажатии передаём url css-файла в функцию "setStyleSheet"/
+Далее функция изменяет значение существующего атрибута у выбранного элемента на соответствующий путь файла css-->
+        <a class="button" onclick="setStyleSheet('css/nav-theme-1.css')" href="#">Стиль №1</a>
+        <a class="button" onclick="setStyleSheet('css/nav-theme-2.css')" href="#">Стиль №2</a>
+        <a class="button" onclick="setStyleSheet('css/nav-theme-3.css')" href="#">Стиль №3</a>
+        <a class="button" onclick="setStyleSheet('css/nav-theme-4.css')" href="#">Стиль №4</a>
+        <a class="button" onclick="setStyleSheet('css/nav-theme-5.css')" href="#">Стиль №5</a>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <img src="./img/man.png">
+</footer>
+</body>
+</html>

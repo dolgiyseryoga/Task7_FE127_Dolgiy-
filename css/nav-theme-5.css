@@ -1,0 +1,129 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* html {
+  position: relative;
+  }
+body {
+font-family: "Montserrat Subrayada", sans-serif;
+font-weight: bold;
+background-color: #A5BE82;
+}
+.container {
+width:80%;
+margin-left:auto;
+margin-right:auto;
+}
+.nav_logo {
+width:5%;
+text-align: center;
+display: flex;
+justify-content: center;
+}
+.nav_menu {
+width:80%;
+}
+.search {
+width:15%;
+}
+.nav {
+display: flex;
+justify-content: space-between;
+margin-top: 5%;
+height: 60px;
+}   
+.nav a {
+  color: #464646;
+text-decoration: none;
+width: 100%;
+display: inline-block;
+padding: 20px 0;
+text-align: center;
+}
+.nav a:hover {
+color: #88b04b ;
+}
+.nav ul {
+display: flex;
+list-style: none;
+}
+.nav li {
+flex: 1 1;
+}
+.nav li:hover {
+border-bottom: 2px solid #5f7c35;
+}
+.search {
+display: flex;
+align-items: center
+}
+.input {
+display: flex;
+border: none;
+border-radius: 3px;
+font-size: 18px;
+background: none;
+width: 90%;
+margin-left: 5%;
+outline: none;
+}
+.fas.fa-search a {
+position: fixed;
+width: 16px;
+right: 12%;
+top:15%
+}
+.fas.fa-search {
+margin-left: -25px;
+position: relative;
+}
+.fas {
+color: grey;
+}
+.nav li {
+position: relative;
+}
+.nav li>ul {
+display: none;
+}
+.nav li:hover > ul {
+display: block;
+position: absolute;
+width: 100%;
+}
+.nav_logo_span {
+visibility: hidden;
+}
+.nav_logo{
+display: hiden;
+}
+.nav li> ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+}
+.button_style {
+display: flex;
+justify-content:space-between;
+margin-top: 25%;
+}
+.button {
+margin: 0 5% 0 5%;
+width: 100px;
+background-color: #5f7c35;
+border-radius: 5px;
+text-align: center;
+padding: 5px;
+text-decoration: none;
+color:#fff;
+}
+.footer img{
+  position: absolute;
+  left:0;
+  bottom:0;
+  max-height: 30%;
+}
